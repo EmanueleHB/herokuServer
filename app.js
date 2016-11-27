@@ -24,4 +24,5 @@ router.use(function(req, res, next) {
 app.use('/', router);
 
 // Boot up server
-app.listen(3000);
+app.listen(process.env.PORT || 5000)
+
